@@ -1,0 +1,8 @@
+services:
+  web:
+    build: .
+    image: cloud-lab-cicd:latest
+    container_name: cloud-lab-cicd
+    ports:
+      - "80:80"
+    restart: unless-stopped
